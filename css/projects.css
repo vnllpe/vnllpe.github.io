@@ -1,0 +1,60 @@
+#block {
+  fill: #FFFFFF;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: scroll 0.8s ease-out, op 0.8s linear alternate;
+  animation-fill-mode: forwards; 
+  opacity: 0;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+
+  cursor: pointer;
+
+  width: 30%;
+}
+
+div .logo {
+  height: 100px;
+  cursor: pointer;
+}
+
+#rectangle {
+  width: 150px;
+  height: 150px;
+  top: 9%;
+
+  background: linear-gradient(223.24deg, #BCE464 0%, #7ACC82 50%, #55AF92 100%);
+  border-radius: 33px 33px 33px 33px;
+}
+
+#info {
+  top: 9%;
+}
+
+#rectangle2 {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  right: 0px;
+  top: 100%;
+
+  background: linear-gradient(223.24deg, #BCE464 0%, #7ACC82 50%, #55AF92 100%);
+  border-radius: 33px 33px 33px 33px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateY(15%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes op {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

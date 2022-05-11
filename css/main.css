@@ -1,0 +1,84 @@
+html, body{
+  width:100%;
+  margin:0;
+  height:100%;
+}
+
+body {
+  background-color: #000000 !important; 
+}
+
+ul#buttons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul#buttons li {
+  float: left;
+  margin-left: 5px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: #FFFFFF;
+}
+
+.telegram, .github, .steam {
+  filter: invert(100%);
+}
+
+.telegram:hover, .github:hover, .steam:hover {
+  filter: invert(70%);
+}
+
+.vk:hover {
+  filter: invert(30%);
+}
+
+.logo {
+  max-width: 1500px;
+}
+
+#projects-button {
+  font-family: MontserratBold;
+  color: #000000;
+  text-decoration: none !important;
+  background-color: #FFFFFF;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+#projects-button:hover {
+  background: linear-gradient(223.24deg, #BCE464 0%, #7ACC82 50%, #55AF92 100%);
+}
+
+.st0, .buttons, footer, #projects-button {
+  fill: #FFFFFF;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear alternate infinite, op 0.8s linear alternate;
+  animation-fill-mode: forwards; 
+  opacity: 0;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 822;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes op {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
