@@ -17,13 +17,20 @@ div .logo {
   cursor: pointer;
 }
 
-#rectangle {
+#rectangle, #rectangle img {
   width: 150px;
   height: 150px;
   top: 9%;
 
-  background: linear-gradient(223.24deg, #BCE464 0%, #7ACC82 50%, #55AF92 100%);
   border-radius: 33px 33px 33px 33px;
+}
+
+#rectangle {
+  background: linear-gradient(223.24deg, #BCE464 0%, #7ACC82 50%, #55AF92 100%);
+}
+
+#rectangle img {
+  background: #FFFFFF;
 }
 
 #info {

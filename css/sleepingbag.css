@@ -1,0 +1,40 @@
+#logo {
+  margin-right: 90%;
+}
+
+#logo img {
+  height: 150px;
+  width: 150px;
+}
+
+#block {
+  fill: #FFFFFF;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: scroll 0.8s ease-out, op 0.8s linear alternate;
+  animation-fill-mode: forwards; 
+  opacity: 0;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+
+  cursor: pointer;
+
+  width: 30%;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateY(15%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes op {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
